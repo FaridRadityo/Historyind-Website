@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+.head-title {
+    font-weight: bold;
+    font-size: 1rem ;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(9, 14, 3);
+    z-index: 99999;
+}
+.navbar .nav_text a {
+    margin-right: 0.4rem;
+}
+a {
+    text-decoration: none;
+    
+}
+.navbar .head-title {
+    color: crimson;
+}
+.navbar .head-title span {
+    color: white;
+    font-weight: 900;
+}
+
+#Hamburgericon {
+    display: none;
+}
+
+.content h3 {
+    color : #f1f1f1;
+    padding: 10rem 7% 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline overline;
+}
+
+.content p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.isi-artikel {
+    padding: 1rem 7%;
+}
+.isi-artikel {
+    border: 2px solid rgb(174, 16, 48);
+    margin: 10rem 10%;
+    border-radius: 1rem;
+}
+
+.isi-artikel p {
+    text-align: left;
+}
+.artikel-footer {
+   background-color: rgb(136, 15, 40);
+    padding: 1.5rem 7%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.artikel-footer h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.artikel-footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color:rgb(123, 13, 35);
+}
+.nextprev {
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nextprev a:hover{
+color: crimson;
+}
+/* Laptop */
+@media (max-width:1366px){
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width:758px){
+    html{
+        font-size: 65%;
+    }
+
+    #Hamburgericon {
+        display: inline-block;
+    }
+    .nav_text {
+        top: 100%;
+        right: -100%;
+        position: absolute;
+        width: 10rem;
+        height: 50vh;
+        background-color: crimson;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .nav_text a {
+        margin: 1rem;
+
+    }
+
+ 
+.nav_text.active  {
+    right: 0;
+}
+    
+  
+
+}
+/* Smartphone */
+
+@media (max-width:) {
+    html {
+font-size: 55%;
+    } 
+}
+
